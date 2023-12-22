@@ -1,0 +1,5 @@
+@mixin flex_justy_align($dp: flex, $jc: center, $ai: center) {
+    display: $dp;
+    justify-content: $jc;
+    align-items: $ai;
+}
