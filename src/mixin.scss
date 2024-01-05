@@ -3,3 +3,11 @@
     justify-content: $jc;
     align-items: $ai;
 }
+
+@mixin circle() {
+    position: absolute;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    height: 100px;
+    width: 100px;
+}

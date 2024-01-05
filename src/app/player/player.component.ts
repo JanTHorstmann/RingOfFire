@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { GameComponent } from '../game/game.component';
+import { Game } from '../../models/game';
 
 @Component({
   selector: 'app-player',
@@ -14,8 +15,13 @@ import { GameComponent } from '../game/game.component';
 })
 export class PlayerComponent {
   @Input() name!: string;
+  @Input() currentCard!: string;
   @Input() playerActive: boolean = false;
   
-  constructor() { }
+  constructor() { 
+  }
   
+  // onCardPicked(card: string) {
+  //   this.currentCard = card; // Aktualisiere die Variable mit der ausgewählten Karte
+  // }
 }
